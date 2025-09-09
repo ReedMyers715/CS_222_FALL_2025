@@ -8,5 +8,7 @@ def main():
     response = urlopen(url, context=context)
     weatherData = json.loads(response.read())
     print(len(weatherData["features"]))
+    for event in weatherData["features"]:
+        print(event["properties"]["headline"])
 
 main()
