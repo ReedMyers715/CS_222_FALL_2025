@@ -36,9 +36,6 @@ class Triangle(Shape):
         return 0.5 * self.base * self.height
     
 def main():
-    c = Circle(10)
-    c.DisplayArea
-    r = Rectangle(5, 3)
-    r.DisplayArea
-    t = Triangle(9, 4)
-    t.DisplayArea
+    shapes = [Circle(10), Rectangle(3, 5), Triangle(10, 15)]
+    for s in shapes:
+        s.DisplayArea()
