@@ -6,3 +6,6 @@ class TestEmployee(unittest.TestCase):
     def test_GiveRaise(self):
         self.employee.GiveRaise(5000)
         self.assertEqual(self.employee.salary, 55000)
+
+if __name__ == '__main__':
+    unittest.main()
