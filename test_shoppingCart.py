@@ -13,5 +13,11 @@ class TestShoppingCart(unittest.TestCase):
         self.cart.AddItem(item)
         self.cart.RemoveItem(item)
 
+    def test_TotalPrice(self):
+        item1 = Item("Book", 12.99)
+        item2 = Item("Pen", 1.99)
+        self.cart.AddItem(item1)
+        self.cart.AddItem(item2)
+
 if __name__ == '__main__':
     unittest.main()
