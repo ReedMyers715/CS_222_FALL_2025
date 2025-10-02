@@ -3,6 +3,10 @@ class ShoppingCart:
         self.items = []
     def AddItem(self, item):
         self.items.append(item)
+    def RemoveItem(self, item):
+        if item in self.items:
+            self.items.remove(item)
+        
 
 class Item:
     def __init__(self, name, price):
